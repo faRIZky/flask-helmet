@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Detection Results</title>
+  </head>
+  <body>
+    <h1>Detection Results</h1>
+    <h2>Full Detection Video</h2>
+    <video width="600" controls autoplay="autoplay" preload="auto">
+      <source src="{{ url_for('full_video') }}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <h2>Segments with No Hardhat Detected</h2>
+    {% for segment in segments %}
+      <h3>Segment {{ loop.index }}</h3>
+      <video width="600" controls autoplay="autoplay" preload="auto">
+        <source src="{{ url_for('output_segment', filename=segment) }}" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    {% endfor %}
+  </body>
+</html>
