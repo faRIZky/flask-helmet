@@ -1,3 +1,4 @@
+# flask final di tanggal 31 10:52 am, bisa 2 sekaligus dan ini udh diset detect per 5 seconds + ada ROI yang masing-masing kamera beda
 from flask import Flask, render_template, Response, jsonify
 import cv2
 from ultralytics import YOLO
