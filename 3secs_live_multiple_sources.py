@@ -1,3 +1,4 @@
+# 2 kamera sekaligus, detect per 3seconds, minus belom ada ROI yha
 from flask import Flask, render_template, Response, jsonify
 import cv2
 from ultralytics import YOLO
