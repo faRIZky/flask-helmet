@@ -1,3 +1,4 @@
+# detect 2 kamera sekaligus but nanti keluar windows for each cam, bukan pake flask/streamlit
 import cv2
 from ultralytics import YOLO
 from datetime import datetime
