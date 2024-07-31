@@ -1,3 +1,4 @@
+# ini bakal disuruh milih mau pake kamera apa, belom bisa detect 2 kamera sekaligus. nanti bakal ada menu dropdown to choose which cam u wanna use yha
 from flask import Flask, render_template, Response, jsonify
 import cv2
 from ultralytics import YOLO
